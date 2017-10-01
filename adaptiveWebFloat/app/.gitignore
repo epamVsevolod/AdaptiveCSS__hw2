@@ -1,0 +1,8 @@
+.DS_Store
+app/libs/jquery
+app/libs/magnific-popup
+dist/
+node-modules/
+.bowerrc
+package-lock.json
+gulpfile.js

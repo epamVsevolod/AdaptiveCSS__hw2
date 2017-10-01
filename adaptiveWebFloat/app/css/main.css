@@ -1,0 +1,233 @@
+@font-face {
+  font-family: 'DosisExtraLight';
+  src: local("Dosis ExtraLight"), local("Dosis-ExtraLight"), url("../fonts/Dosis/DosisExtraLight/dosisextralight.woff2") format("woff2"), url("../fonts/Dosis/DosisExtraLight/dosisextralight.woff") format("woff"), url("../fonts/Dosis/DosisExtraLight/dosisextralight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'DosisLight';
+  src: local("Dosis Light"), local("Dosis-Light"), url("../fonts/Dosis/DosisLight/dosislight.woff2") format("woff2"), url("../fonts/Dosis/DosisLight/dosislight.woff") format("woff"), url("../fonts/Dosis/DosisLight/dosislight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'DosisRegular';
+  src: local("Dosis"), local("Dosis-Regular"), url("../fonts/Dosis/DosisRegular/dosis.woff2") format("woff2"), url("../fonts/Dosis/DosisRegular/dosis.woff") format("woff"), url("../fonts/Dosis/DosisRegular/dosis.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  font-family: "DosisExtraLight";
+  font-weight: 100;
+  color: #771921;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.widget {
+  background-image: url("../img/widget-background.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: table; }
+
+.widget__container {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center; }
+
+.widget__article {
+  display: inline-block; }
+
+.widget__left-weather {
+  display: inline-block;
+  padding: 30px; }
+
+.widget__left-text {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  color: #ffffff;
+  display: block; }
+  .widget__left-text:before {
+    content: "";
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle; }
+
+.widget__left-text_dark {
+  background-image: url("../img/widget__left-dark.png");
+  font-size: 2.5rem;
+  width: 100%; }
+
+.widget__left-text_red {
+  background-image: url("../img/widget__left-red.png");
+  font-size: 1.6rem;
+  width: 100%;
+  min-height: 30px; }
+
+.widget__left_bg-img {
+  background-image: url("../img/widget__left.png");
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: no-repeat;
+  width: 290px; }
+
+.widget__right_bg-img {
+  background-image: url("../img/widget__right.png");
+  width: 291px;
+  height: 438px; }
+
+.widget__right-tempr {
+  font-size: 7rem;
+  line-height: 1;
+  word-spacing: 0.5rem;
+  margin: 0; }
+
+.widget__right-graf {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  vertical-align: top; }
+
+.widget__right-elem:nth-child(1) {
+  float: left; }
+
+.widget__right-elem:nth-child(3) {
+  float: right; }
+
+.widget__right-list {
+  width: 100%;
+  display: inline-block;
+  max-width: 208px;
+  padding-left: 0; }
+
+.widget__right-elem {
+  display: inline-block;
+  text-align: center;
+  min-width: 50px; }
+
+.widget__right-text_sun {
+  background-image: url("../img/widget__right-sun.png");
+  width: 40px;
+  height: 40px; }
+
+.widget__right-text_cloudy {
+  background-image: url("../img/widget__right-cloudy.png");
+  width: 40px;
+  height: 40px; }
+
+.widget__right-text_day {
+  border-bottom: 1px solid;
+  padding-bottom: 9px;
+  margin-bottom: 15px;
+  font-size: 1.15rem; }
+
+.widget__right-text_temp-day {
+  margin-bottom: 5px;
+  font-size: 1.15rem; }
+
+.widget__right-text_temp-night {
+  color: #000;
+  font-size: 1.15rem; }
+
+@media only screen and (min-width: 769px) {
+  .widget__left, .widget__right {
+    float: left;
+    display: block;
+    position: relative;
+    height: 438px; }
+  .widget__right-graf {
+    padding: 22px 0;
+    margin: 0; }
+  .widget__right-tempr {
+    padding: 26px 0 16px 0; }
+  .widget__left-text_red {
+    width: 100%;
+    height: 104px;
+    bottom: 0;
+    position: absolute; }
+  .widget__left-text_dark {
+    width: 100%;
+    height: 94px;
+    bottom: 104px;
+    position: absolute; } }
+
+@media only screen and (max-width: 768px) {
+  .widget__left, .widget__right {
+    display: inline-block;
+    position: relative;
+    width: 100%; }
+  .widget__right {
+    height: 100%; }
+  .widget__right-graf {
+    padding: 33px 0;
+    margin: 40px 20px 0 0; }
+  .widget__right-tempr {
+    padding: 26px 0 0 0; }
+  .widget__right-list {
+    width: 100%;
+    display: inline-block;
+    max-width: 208px;
+    padding-left: 0; }
+  .widget__right-elem {
+    margin: 0 auto; }
+    .widget__right-elem:nth-child(1) {
+      float: left; }
+    .widget__right-elem:nth-child(3) {
+      float: right; }
+  .widget__left-weather {
+    display: inline-block;
+    padding: 15px 0 10px 0; }
+  .widget__left-text_red {
+    width: 100%;
+    position: relative; }
+  .widget__left-text_dark {
+    width: 100%;
+    position: relative; } }
+
+@media only screen and (max-width: 480px) {
+  .widget__right-graf {
+    margin: 5px 0 0 0;
+    padding: 20px 0; }
+  .widget__left, .widget__right {
+    min-width: 292px; }
+  .widget__right-tempr {
+    padding: 5px 0 5px 0; }
+  .widget__left-weather {
+    display: inline-block;
+    margin: 5px auto 0 auto; } }
+
+@media only screen and (min-width: 414px) and (max-width: 480px) {
+  .widget__right-graf {
+    margin: 40px 0 0 0;
+    padding: 33px 0; } }
+
+@media only screen and (min-width: 320px) {
+  .widget__right-elem:nth-of-type(1) {
+    margin: 25px auto 15px auto; }
+  .widget__right-elem:nth-of-type(2) {
+    margin: 25px auto 15px auto; }
+  .widget__right-elem:nth-of-type(3) {
+    margin: 25px auto 15px auto; } }
+
+@media only screen and (max-width: 320px) {
+  .widget__right-graf {
+    padding: 5px 0; }
+  .widget__left-weather {
+    width: 110px;
+    height: 110px;
+    padding: 15px; }
+  .widget__right-tempr {
+    padding: 3px 0 0 0; }
+  .widget__right-elem {
+    padding: 0 auto; }
+  .widget__right-elem:nth-of-type(1) {
+    margin: 5px auto 5px auto; }
+  .widget__right-elem:nth-of-type(2) {
+    margin: 5px auto 5px auto; }
+  .widget__right-elem:nth-of-type(3) {
+    margin: 5px auto 5px auto; } }

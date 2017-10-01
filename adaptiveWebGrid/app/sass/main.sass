@@ -1,0 +1,165 @@
+@import "app/css/fonts"
+// @import "media"
+
+html, body
+	width: 100%
+	height: 100%
+	font-size: 14px
+	font-family: "DosisExtraLight"
+	font-weight: 100
+	color: #771921
+	box-sizing: border-box
+
+
+.widget
+	background-image: url("../img/widget-background.png")
+	background-repeat: no-repeat
+	background-size: cover
+	width: 100%
+	height: 100%
+	min-height: 438px
+	@media only screen and (min-width : 580px) 
+		display: grid
+		grid-rows: minmax(100vh, 1fr)
+		grid-template-columns: 1fr 1fr 1fr
+		grid-template-rows: 1fr 1fr 1fr
+		justify-self: center
+		align-items: center
+	@media only screen and (max-width : 579px)
+		display: inline-block
+
+.widget__left-weather
+	padding: 2rem
+
+.widget__grid
+	display: grid
+	justify-self: center
+	align-items: centre
+	@media only screen and (min-width : 580px) 
+		grid-area: 2/2/2/3
+		align-items: center
+		grid-template-columns: 1fr 1fr 1fr 1fr
+	@media only screen and (max-width : 579px)
+		display: grid
+		width: 100%
+		height: 100%
+
+.widget__left, .widget__right 
+	position: relative
+	display: grid
+	width: 100%
+	height: 100%
+	text-align: center
+	align-items: center
+	align-content: center
+	@media only screen and (min-width : 580px)
+		height: 438px
+
+.widget__right 
+	grid-template-rows: 1fr 1fr 1fr
+
+.widget__left
+	grid-template-rows: 2fr minmax(auto, 94px) minmax(auto, 104px)
+	grid-template-columns: auto
+	grid-gap: 0
+	@media only screen and (max-width : 579px)
+		grid-template-rows: 2fr 1fr	1fr
+
+.widget__left-weather
+	max-height: 142px
+	max-width: 142px
+
+
+.widget__left-text
+	display: inline-grid
+	text-align: center
+	justify-self: center
+	height: 100%
+	padding: 0.5rem
+	margin: 0
+	color: #ffffff
+	align-items: center
+	position: relative
+	@media only screen and (max-width : 580px)
+		width: 100%
+
+.widget__left-text_dark
+	background-image: url("../img/widget__left-dark.png")
+	font-size: 2.5rem
+	min-width: 290px
+	grid-row: 2/3
+
+
+.widget__left-text_red
+	background-image: url("../img/widget__left-red.png")
+	font-size: 1.6rem
+	min-width: 290px
+	grid-row: 3/3
+
+.widget__left_bg-img
+	background-image: url("../img/widget__left.png")
+	background-size: cover
+	background-repeat: no-repeat
+	min-width: 290px
+	width: 100%
+
+.widget__right_bg-img
+	background-image: url("../img/widget__right.png")
+	width: 100%
+	min-width: 291px
+	max-height: 438px
+
+.widget__right-tempr
+	font-size: 7rem
+	line-height: 1
+	word-spacing: 0.5rem
+	margin: 0
+	justify-self: center
+
+.widget__right-graf
+	border-bottom: 1px solid
+	border-top: 1px solid
+	padding: 1.5rem 0
+	justify-self: center
+
+.widget__right-list
+	width: 100%
+	display: grid
+	margin: 12px 0
+	grid-template-columns: 1fr 1fr 1fr
+	grid-gap: 20px
+	max-width: 208px
+	padding-left: 0
+	text-align: center
+	justify-self: center
+
+.widget__right-elem
+	display: inline-block
+	text-align: center
+	min-width: 50px
+	
+.widget__right-text_sun
+	background-image: url("../img/widget__right-sun.png")
+	width: 40px
+	height: 40px
+	display: inline-block
+
+.widget__right-text_cloudy
+	background-image: url("../img/widget__right-cloudy.png")
+	width: 40px
+	height: 40px
+	display: inline-block
+
+.widget__right-text_day
+	border-bottom: 1px solid
+	padding-bottom: 9px
+	margin-bottom: 15px
+	font-size: 1.15rem
+
+.widget__right-text_temp-day
+	margin-bottom: 5px
+	font-size: 1.15rem
+
+.widget__right-text_temp-night
+	color: #000
+	font-size: 1.15rem
