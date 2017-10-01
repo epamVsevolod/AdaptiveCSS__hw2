@@ -1,5 +1,5 @@
-*.DS_Store
-*.DS_Store?
+**/.DS_Store
+**/.DS_Store?
 
 **/dist/
 **/node_modules/
@@ -11,3 +11,4 @@
 **/libs.css
 **/fonts.css
 **/media.sass
+**/package.json
