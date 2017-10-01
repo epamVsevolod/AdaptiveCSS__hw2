@@ -5,7 +5,8 @@ node_modules/
 gulpfile.js
 package-lock.json
 package.json
-app/js
+app/js/
+app/libs/
 app/css/media.css
 app/css/libs.css
 app/css/fonts.css
