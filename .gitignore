@@ -1,15 +1,13 @@
-**/.DS_Store
-**/.DS_Store?
 .DS_Store
 
-**/dist/
-**/node_modules/
-*.bowerrc
-**/*/gulpfile.js
-**/*/package-lock.json
-**/*/app/js/
-**/*/media.css
-**/*/libs.css
-**/*/fonts.css
-**/*/media.sass
-**/*/package.json
+dist/
+node_modules/
+.bowerrc
+gulpfile.js
+package-lock.json
+app/js/
+media.css
+libs.css
+fonts.css
+media.sass
+package.json
